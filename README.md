@@ -16,3 +16,23 @@ composer update
 
 php artisan migrate
 
+3.
+在crontab中加入以下指令
+
+*  *    * * *   root     php /var/www/LaravelLogin/artisan schedule:run >> /dev/null 2>&1
+
+若原來的crontab格式中不需要填入user 則使用以下指令
+
+*  *    * * *   php /var/www/LaravelLogin/artisan schedule:run >> /dev/null 2>&1
+
+
+4.
+重啟crontab(ubuntu為例)
+service cron reload
+service cron restart
+
+
+
+
+
+
