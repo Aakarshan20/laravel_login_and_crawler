@@ -28,9 +28,10 @@ php artisan migrate
 
 4.
 重啟crontab(ubuntu為例)
+```
 service cron reload
 service cron restart
-
+```
 
 
 
