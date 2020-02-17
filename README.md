@@ -5,9 +5,11 @@
 git pull 後請於server端該下載目錄執行以下指令
 
 ## 1.
-安裝vendor
+安裝vendor 與建立.env檔
 ```
 composer update
+
+cp .env.example .env
 ```
 ## 2.
 建立2張資料表
